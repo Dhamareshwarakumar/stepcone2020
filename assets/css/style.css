@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: 0;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 100px auto;
+	max-width: 1000px;
+}
+
+.card {
+	background-color: #ffffff;
+	box-shadow: 300px 0 50px rgba(0, 0, 0, 0.5) inset;
+	height: 400px;
+	margin: 20px 0;
+	position: relative;
+	-webkit-transform: perspective(2000px);
+	        transform: perspective(2000px);
+	-webkit-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
+	transition: box-shadow 1s ease,
+		        	z-index 1s ease,
+		        	-webkit-transform 1s ease;
+	transition: box-shadow 1s ease,
+		        	transform 1s ease,
+							z-index 1s ease;
+	transition: box-shadow 1s ease,
+		        	transform 1s ease,
+							z-index 1s ease,
+		        	-webkit-transform 1s ease;
+	width: 300px;
+	border-radius: 30px;
+}
+
+.card:hover {
+	box-shadow: 20px 0 50px rgba(0, 0, 0, 0.5) inset;
+	-webkit-transform: perspective(2000px) rotateZ(-0deg);
+	        transform: perspective(2000px) rotateZ(-0deg);
+	z-index: 1000;
+	/*border-radius: 30px;*/
+}
+
+.card .img-box {
+	border: 1px solid #000000;
+	height: 100%;
+	position: relative;
+	-webkit-transform-origin: left;
+	        transform-origin: left;
+	transition: -webkit-transform 1s ease;
+	transition: transform 0.2s ease;
+	transition: transform 0.2s ease, -webkit-transform 1s ease;
+	width: 100%;
+	z-index: 1;
+	border-radius: 30px;
+}
+
+.card:hover .img-box {
+	
+	        transform: rotateY(90deg);
+}
+
+.card .img-box img {
+	height: 100%;
+	left: 0;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	position: absolute;
+	top: 0;
+	border-radius: 30px;
+	width: 100%;
+}
+
+.card .details {
+	left: 0;
+	padding: 20px;
+	position: absolute;
+	top: 0;
+	border-radius: 30px;
+}

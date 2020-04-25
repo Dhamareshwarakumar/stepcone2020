@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Coming Soon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->  
+    <link rel="icon" type="image/png" href="../assets/come/favicon.ico"/>
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../assets/come/bootstrap.min.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../assets/come/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../assets/come/animate.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../assets/come/select2.min.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../assets/come/util.css">
+    <link rel="stylesheet" type="text/css" href="../assets/come/main.css">
+<!--===============================================================================================-->
+
+<link rel="stylesheet" href="../assets/css/loader.css">
+
+    </head>
+     <div id="loading-wrapper">
+  <img  SRC="../logo.png" class="ri"><div id="loading-content"></div>
+</div>
+
+    <body onselectstart="return false" onload="Loader_fun()" >
+    <script>
+            var myabc;
+
+            function Loader_fun() {
+                myabc = setTimeout(showPage, 1000);
+                         }
+            function showPage() {
+                document.getElementById("loading-wrapper").style.display = "none";
+                document.getElementById("myDiv").style.display = "block";
+                var paa = new Preload();
+                paa.init();
+            }
+        </script>   
+        <div style="display:none;" id="myDiv" class="main-total-wrapper">
+    <!--  -->
+    <div class="simpleslide100">
+        <div class="simpleslide100-item bg-img1" style="background-image: url('../assets/come/bg01.jpg');"></div>
+        <div class="simpleslide100-item bg-img1" style="background-image: url('../assets/come/bg02.jpg');"></div>
+        <div class="simpleslide100-item bg-img1" style="background-image: url('../assets/come/bg03.jpg');"></div>
+    </div>
+
+    <div class="size1 overlay1">
+        <!--  -->
+        <div class="size1 flex-col-c-m p-l-15 p-r-15 p-t-50 p-b-50">
+            <h3 class="l1-txt1 txt-center p-b-25">
+                Coming Soon
+            </h3>
+
+            <p class="m2-txt1 txt-center p-b-48">
+               Problem statements are updated soon.......
+               <font color="red">!!!!!!Stay Tuned!!!!!!</font>
+            </p>
+
+            <div class="flex-w flex-c-m cd100 p-b-33">
+                <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+                    <span class="l2-txt1 p-b-9 days" id="days"></span>
+                    <span class="s2-txt1">Days</span>
+                </div>
+
+                <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+                    <span class="l2-txt1 p-b-9 hours" id="hours"></span>
+                    <span class="s2-txt1">Hours</span>
+                </div>
+
+                <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+                    <span class="l2-txt1 p-b-9 minutes" id="minute"></span>
+                    <span class="s2-txt1">Minutes</span>
+                </div>
+
+                <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+                    <span class="l2-txt1 p-b-9 seconds" id="seconds"></span>
+                    <span class="s2-txt1">Seconds</span>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+
+
+    
+
+<!--===============================================================================================-->  
+    <script src="../assets/come/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+    <script src="../assets/come/popper.js"></script>
+    <script src="../assets/come/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+    <script src="../assets/come/select2.min.js"></script>
+<!--===============================================================================================-->
+    <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2020 15:37:25").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+  
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+  
+  // Time calculations for days, hours, minutes and seconds
+  var days =12;
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  // Output the result in an element with id="demo"
+  document.getElementById("days").innerHTML = days ;
+  document.getElementById("hours").innerHTML =  hours;
+  document.getElementById("minute").innerHTML = minutes ;
+  document.getElementById("seconds").innerHTML = seconds;
+  
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+<!--===============================================================================================-->
+    <script src="../assets/come/tilt.jquery.min.js"></script>
+    <script >
+        $('.js-tilt').tilt({
+            scale: 1.1
+        })
+    </script>
+<!--===============================================================================================-->
+    <script src="../assets/come/main1.js"></script>
+
+</body>
+</html>

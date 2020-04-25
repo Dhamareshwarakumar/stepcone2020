@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <style type="text/css">
+        #Number::-webkit-inner-spin-button, 
+       #Number::-webkit-outer-spin-button { 
+          -webkit-appearance: none; 
+        margin: 0; 
+          }
+          
+    </style>
+    
+  <script type="text/javascript">
+    function f(){
+      var string="";
+      var arr=['A. J. College of Education','Acharya Nagarjuna University(ANU) ', 'Aditya College of Engineering and Technology Kakinada', 'Aditya Degree College', 'Aditya Engineering College  Dist. East Godavari', 'Aditya Institute of Technology and Management(AITAM)', 'Adusumilli Gopalakrishnaiah and Sugarcane Growers Siddhartha Degree College of Arts and Science', 'Akkineni Nageswara Rao College', 'Amrita Sai Institute of Science and Technology Krishna District', 'Andhra Christian College', 'Andhra Loyola College', 'Andhra Lutheran College of Education Guntur', 'Andhra Pradesh Residential Degree College', 'Andhra University (AU)', 'Anil Neerukonda Institute of Technology & Sciences(ANITS)', 'Annamacharya College of Pharmacy', 'Annamacharya Institute of Technology and Sciences', 'Annamacharya Institute of Technology and Sciences', 'Audisankara College of Engineering and Technology', 'Audisankara Institute of Technology', 'Avanthi Institute of Engineering and Technology', 'B. V. K. College', 'Baba Institute of Technology and Sciences', 'Balaji Institute of Engineering and Management Studies', 'Bapatla College of Arts & Sciences', 'Bapatla Engineering College  ', 'Bhagawan Sri Satyasai Baba Degree College', 'Bonam Venkata Chalamayya Institute of Technology & Science', 'CSSR and SRRM Degree and PG College', 'Ch. S. D. St. Theresa s Autonomous College for Women', 'Chaitanya Bharathi Institute of Technology', 'Chaitanya Engineering College', 'Chalapathi Institute of Engineering and Technology', 'Chalapathi Institute of Pharmaceutical Sciences', 'Chalapathi Institute of Technology', 'Chirala Engineering College', 'D.R.G. Government Degree & P.G. College Tadepalligudem', 'D.S. Government Degree College For Women', 'Dadi Institute of Engineering and Technology', 'Devineni Venkata Ramana and Dr. Himasekhar MIC College of Technology', 'Dhanekula Institute of Engineering and Technology', 'Dharma Apparao College', 'Dr. B. R. Ambedkar Institute of Technology ', 'Dr. B. V. Raju Institute of Computer Education', 'Dr. Lankapalli Bullayya College Visakhapatnam', 'Dr. V. S. Krishna Government Degree College', 'Duvvuru Ramananmma Women’s College ', 'G. Pulla Reddy Engineering College', 'G. Pullaiah College of Engineering and Technology', 'G. V. R. S. Government Degree College', 'G.V.S.M. Government Degree College', 'GIET Engineering College', 'GIET School of Pharmacy', 'GMR Institute of Technology', 'Gandhi Institute of Technology and Management (GITAM)', 'Gayatri Vidya Parishad College of Engineering (GVPE)', 'Government College', 'Government College for Women', 'Government Degree College ', 'Government Degree College   Tuni East Godavari Dist 533401', 'Government Degree College Nagari Chittoor Dist 517590', 'Government Degree College Srungavarapu Kota Vizianagaram 535145', 'Government Degree College for Women', 'Gudlavalleru Engineering College', 'Hindu College', 'Jagarlamudi Kuppuswamy Choudary College', 'Jawahar Bharati Degree College', 'Jawaharlal Nehru Rajkeeya Mahavidyalaya', 'Jawaharlal Nehru Technology University, Kakinada(JNTUK)', 'Jawaharlal Nehru Technology University, Vizianagaram(JNTUV)', 'K.G. Prasada Rao - A.N.R. College of Education Post Box No. 28', 'K.H. Government Degree College', 'K.R.K Government Degree College', 'K.S.N. Government Degree College for Women', 'KKR and KSR Institute of Technology and Sciences', 'KVR', 'Kakinada Institute of Technology and Science', 'Kallam Haranadhareddy Institute of Technology', 'Koneru Lakshmaiah Education Foundation (KLU)', 'Krishna Chaitanya Institute of Technology and Sciences', 'Kuppam Engineering College', 'Lendi Institute of Engineering and Technology', 'Lenora Institute of Dental Sciences', 'Loyola Institute of Technology and Management', 'M V R College of Engineering and Technology', 'MVN.', 'Madanapalle Institute of Technology and Science', 'Maharaj Vijayaram Gajapathi Raj College of Engineering(MVGR)', 'Maharajas College ', 'Maris Stella College ', 'Montessori Mahila Kalasala', 'Mrs. A. V. N. College', 'N. S. P. R. Government College for Women', 'N.B.K.R. Institute of Science & Technology ', 'N.B.K.R. Science & Arts College', 'N.T.R. Government Degree College', 'NRI Institute of Technology', 'Nadimpalli Satyanarayana Raju Institute of Technology', 'Narasaraopeta Engineering College', 'Narayana Dental College', 'Narayana Medical College', 'Nirmala College of Pharmacy', 'Noble College', 'Nova College of Engineering and Technology', 'Nova College of Pharmaceutical Education and Research', 'Nova PG College', 'Osmania College', 'P. B. N. College', 'P. R. R. & V. S. Government College Vidavalur SPSR','Prasad V. Potluri Siddhartha Institute Of Technology(PVPSIT)', 'P. V. K. N. Government College', 'P.S.C. & K.V.S.C. Government College', 'PACE Institute of Technology and Sciences', 'Paritala Sriramulu Government Degree College', 'Parvathareddy Babul Reddy Visvodaya Institute of Technology and Science', 'Pithapur Rajah s Government College ', 'Pragati Engineering College', 'Priyadarshini College of Engineering and Technology', 'QIS College of Engineering and Technology', 'R.R.D.S. Government Degree College', 'R.V.R. & J.C. College of Engineering ', 'Raghavendra Institute of Pharmaceutical Education and Research ', 'Raghu Engineering College', 'Raghu Institute of Technology', 'Rajeev Gandhi Memorial College of Engineering and Technology ', 'Ramachandra College of Engineering', 'Rayalaseema College of Education 19-8-150', 'Rayapati Venkata Ranga Rao College of Education', 'S. B. V. R. Degree College', 'S. C. N. R. Government Degree College', 'S. G. K. Government Degree College', 'S. K. B. R. Government Degree College', 'S. K. V. T. College', 'S. R. R. and C. V. R. Government Degree College', 'S. T. S. N. Government Degree College Kadiri - 515591 ', 'S. V. Arts and Science College', 'S. V. B. Government Degree College', 'S. V. L. N. S. Government Degree College', 'S.G.A. Government Degree College', 'S.K.P. Government College', 'S.K.R. & S.K.R. Government College for Women', 'S.K.R. Government Degree College', 'S.V.C.R. Government Degree College', 'S.V.D. Government Degree College for Women', 'S.V.G.M. Government Degree College Kalyandurg Anantapur Dist 515761', 'S.V.R.K Government Degree College ', 'SDS ', 'Sagi Rama Krishnam Raju Engineering College(SRKR)', 'Sanjay Gandhi  Government Degree College', 'Sasi Institute of Technology & Engineering', 'Seven Hills College of Pharmacy', 'Shree Velagapudi Ramakrishna Memorial College ', 'Shri Vishnu College of Pharmacy', 'Shri Vishnu Engineering College ', 'Siddartha Institute of Science and Technology', 'Siddharth Institute of Engineering and Technology', 'Silver Jubilee Government College ', 'Sir C. R. Reddy Autonomous College', 'Sir C. R. Reddy College of Engineering', 'Smt. Gentela Sakuntalamma College', 'Smt. Kandukuri Rajyalakshmi College for Women', 'Smt. N.P. Savithramma Government College for Women', 'Sree Konaseema Bhanoji Ramars College', 'Sree Vasavi Kanyaka Parameswari Arts', 'Sreenivasa Institute of Technology & Management Studies ', 'Sri A. B. R. Government Degree College Repalle', 'Sri A.S.N.M Government College', 'Sri Bijivemula Veera Reddy College of Education Badvel Kadapa Dist 516227', 'Sri Chintalapati Varaprasada Murthy Raju Government Degree College', 'Sri Dasari Narayana Rao Government Degree College for Women', 'Sri Mahayogi Lakshamma Government Degree College', 'Sri Neelam Sanjeeva Reddy Arts', 'Sri Ramakrishna Degree College ', 'Sri Sai Baba National Degree College ', 'Sri Sivani College of Engineering NH-16', 'Sri V.S. Sivalingam Chettiar Government Degree College', 'Sri Vasavi Engineering College', 'Sri Vasavi Kanyaka Parameswari and Dr. Kalidindi Suryanarayana Raju Arts and Science College', 'Sri Venkateswara College of Engineering', 'Sri Venkateswara College of Engineering And Technology ', 'Sri Venkateswara College of Engineering and Technology', 'Sri Venkateswara College of Nursing', 'Sri Venkateswara College of Pharmacy', 'Sri Yerramilli Narayana Murthy College', 'Srinivasa Institute of Engineering and Technology', 'Srinivasa Ramanujan Institute of Technology', 'St. Ann’s College of Engineering and Technology', 'St. Joseph’s College for Women ', 'St. Mary’s Group of Institutions Guntur', 'St. Mary’s Women’s Engineering College', 'Subharam Government Degree College', 'Swarnandhra Institute of Engineering & Technology', 'T.R.R. Government Degree College', 'T.S.R. & E.R.R. Government Degree College', 'The Adoni Arts & Science College', 'Tirumala Engineering College', 'Usha Rama College of Engineering and Technology', 'V. R. S. and Y. R. N. College', 'V.S.M. College', 'VSM College of Engineering', 'Vasireddy Venkatadri Institute of Technology', 'Velagapudi Ramakrishna Siddhartha Engineering College ', 'Vemu Institute of Technology', 'Vemuri Sundara Ramaiah Government Degree and P. G. College', 'Vidyalaya College of Education', 'Vignan’s Institute of Information Technology', 'Visakha Government Degree College for Women', 'Vishnu Institute of Technology', 'Visvodaya Government Degree College', 'Viswa Kavi Vermana Government Degree College', 'Y. V. N. R. Government Degree College'];
+                for(i=0;i<arr.length;i++)
+                {
+                    string=string+"<option value='"+arr[i]+"''>";
+                }
+                string="<datalist id='clgg'>"+string+"</datalist>";
+                document.getElementById("output").innerHTML=string;
+    }
+    function funotp(form1)
+    {
+      var phone=document.form1.contact_no.value;
+      var min=100000;
+      var max=999999;
+      //alert(phone);
+      var rand=Math.floor(Math.random() * (+max - +min)) + +min; 
+      var msg="Welcome to Stepone 2020. \n Your OTP for registration is "+rand;
+      //alert(rand);
+      var x = document.getElementById("otpcheck");
+      x.setAttribute("value",rand);
+//      alert(rand);
+var wnd=window.open("http://push.vg4mobile.com/newBulkClient.jsp?senderID=GMRIT&msisdn=91"+phone+"&userid=477&msg="+msg+"&pwd=gmrit@vgt");
+//alert(wnd);
+setTimeout(function()
+{
+  wnd.close();
+},0);
+    }
+    function campus_ambassdor()
+    {
+        var clg=document.form1.clg.value;
+        //alert(clg);
+        if(clg=="GMR Institute of Technology"||clg=="G.M.R Institute"||clg=="gmrit college"||clg=="GMRIT"||clg=="gmrit"||clg=="gmr"||clg=="GMR"||clg=="Gmr"||clg=="GMRIT rajam"||clg=="Gmrit"||clg=="GMR IT"||clg=="Gmr institute of technology"){
+          document.getElementById('camp_disp').style.display="none";
+          document.getElementById('clg').value="GMR Institute of Technology";
+        }
+        else
+          document.getElementById('camp_disp').style.display="block";
+    }
+    </script>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <script src="../assets/js/modernizr.min.js" type="text/javascript"></script>
+
+<link rel='stylesheet' href='../assets/css/bootstrap.min.css'>
+<link rel='stylesheet' href='../assets/css/bootstrap-theme.min.css'>
+<!--<link rel='stylesheet' href='css/bootstrapValidator.min.css'>-->
+<link rel="stylesheet" href="../assets/css/user_register.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+        <script type="text/javascript" >
+   function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+
+</script>
+</head> 
+    
+
+    <body onload="f()" >
+                       
+<!-- partial:index.partial.html -->
+    <div class="container">
+
+    <form class="well form-horizontal" action="register.php" method="post"  id="contact_form" name="form1">
+<fieldset>
+
+<!-- Form Name -->
+<legend><center><h2><b>Registration Form</b></h2></center></legend><br>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label">First Name</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Last Name</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<div class="form-group"> 
+  <label class="col-md-4 control-label">Year</label>
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+        <select name="year" class="form-control selectpicker" >
+      <option value="" hidden>select year</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+  </div>
+</div>
+</div>
+
+  <div class="form-group"> 
+  <label class="col-md-4 control-label">Department</label>
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+        <input list="dep" name="dept" class="form-control" placeholder="dept" >
+    <datalist id="dep">
+      <option value="">
+      <option value="CSE">
+      <option value="ECE">
+      <option value="EEE">
+      <option value="MECHANICAL">
+      <option value="CHEMICAL">
+      <option value="CIVIL">
+      <option value="POWER">
+      <option value="IT">
+    </datalist>
+  </div>
+  <font color="#902008"><span id="jk"></span></font>
+</div>
+</div>
+
+
+  
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Reg. No</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="regno" placeholder="JNTU No./Reg No." class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+
+<div class="form-group"> 
+  <label class="col-md-4 control-label">Institute Name</label>
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-education"></i></span>
+        <input list="clgg" name="clg" class="form-control" placeholder="Type your college name" onchange="campus_ambassdor()" id="clg">
+  <div id="output" >
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Password</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+  <input name="user_password" placeholder="Password" class="form-control"  type="password"  >
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Confirm Password</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon" ><i class="glyphicon glyphicon-lock"></i></span>
+  <input name="confirm_password" placeholder="Confirm Password" class="form-control"  type="password" >
+    </div>
+    <span id="cpp"></span>
+  </div>
+</div>
+<!--facebook id
+<div class="form-group">
+  <label class="col-md-4 control-label">Facebook Id:</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="fb" placeholder="Fb Id" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+<insta id
+<div class="form-group">
+  <label class="col-md-4 control-label">Instagram Id:</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="insta" placeholder="Insta Id" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+-->
+<!-- Text input-->
+       <div class="form-group">
+  <label class="col-md-4 control-label">E-Mail</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+  <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+
+<!-- Text input-->
+       
+<div class="form-group">
+  <label class="col-md-4 control-label">Contact No.</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input name="contact_no" placeholder="Phone Number" class="form-control" type="Number" id="Number">
+    </div>
+  </div>
+  <button type="button" class="btn btn-warning" onclick="funotp()" >GET OTP <span class="glyphicon glyphicon-send"></span></button>
+</div>
+<!--otp-->
+<div class="form-group">
+  <label class="col-md-4 control-label">Enter OTP:</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+  <input name="otp" placeholder="Enter otp" class="form-control" type="Number" id="otp ">
+    </div>
+  </div>
+</div>
+<!--hidden otp-->
+<div class="form-group">    
+    <input name="otpcheck" type="hidden" value="" id="otpcheck">
+</div>
+
+       <div class="form-group" id="camp_disp" style="display: none;">
+  <label class="col-md-4 control-label">Campus Ambassador E-Mail</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+  <input name="camp_email" placeholder="( if any )" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Select Basic -->
+
+<!-- Success message -->
+<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Success!.</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4"><br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" class="btn btn-warning" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div>
+    </div><!-- /.container -->
+<!-- partial -->
+  <script src='../assets/js/jquery.min.js'></script>
+<script src='../assets/js/bootstrap.min.js'></script>
+<script src='../assets/js/bootstrapvalidator.min.js'></script>
+<script  src="register.js"></script>
+</body>
+</html>

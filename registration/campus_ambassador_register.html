@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <style type="text/css">
+        #Number::-webkit-inner-spin-button, 
+       #Number::-webkit-outer-spin-button { 
+          -webkit-appearance: none; 
+        margin: 0; 
+          }
+          
+    </style>
+  <script type="text/javascript">
+    function funotp(form1)
+    {
+      //alert('hi');
+      var email=document.form1.email.value;
+      $(document).ready(function(){
+        $.get("forgot_password.php?email="+email,function(data){
+          //alert();
+          var phone=data.substring(1,11);
+          var msg=data.substring(11,data.length-1);
+          msg="Welcome to STEPCONE 2020.\n "+msg+" is your password. Please remember it";
+          //alert(msg);
+          var wnd=window.open("http://push.vg4mobile.com/newBulkClient.jsp?senderID=GMRIT&msisdn=91"+phone+"&userid=477&msg="+msg+"&pwd=gmrit@vgt");
+          document.getElementById('num').innerHTML="Password Has Been Sent To *******"+phone.substring(7);
+        });
+      });
+      setTimeout(function()
+{
+  wnd.close();
+},0);
+      }
+    </script>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <script src="js/modernizr.min.js" type="text/javascript"></script>
+
+<link rel='stylesheet' href='css/bootstrap.min.css'>
+<link rel='stylesheet' href='css/bootstrap-theme.min.css'>
+<!--<link rel='stylesheet' href='css/bootstrapValidator.min.css'>-->
+<link rel="stylesheet" href="../assets/css/user_register.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+</head>
+<body onload="f()">
+<!-- partial:index.partial.html -->
+    <div class="container">
+
+    <form class="well form-horizontal" method="post" action="campus_ambassador.php" id="contact_form" name="form1">
+<fieldset>
+
+<!-- Form Name -->
+<legend><center><h2><b>Registration Form</b></h2></center></legend><br>
+
+<!-- Text input-->
+
+
+
+  
+
+
+  
+<!-- Text input-->
+
+
+
+<!-- Text input-->
+
+
+<!-- Text input-->
+       <div class="form-group">
+  <label class="col-md-4 control-label">E-Mail</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+  <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+    </div>
+  </div>
+  <span id="num"></span>
+</div>
+
+
+<!-- Text input-->
+       
+<div class="form-group">
+  <label class="col-md-4 control-label" >Password</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+  <input name="user_password" placeholder="Password" class="form-control"  type="password"  >
+    </div>
+  </div>
+  <button type="button" class="btn btn-warning" onclick="funotp()" >Forget Password ? </button>
+</div>
+
+
+
+<!-- Success message -->
+<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Success!.</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4"><br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" class="btn btn-warning" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div>
+    </div><!-- /.container -->
+<!-- partial -->
+  <script src='../assets/js/jquery.min.js'></script>
+<script src='../assets/js/bootstrap.min.js'></script>
+<script src='../assets/js/bootstrapvalidator.min.js'></script>
+<script  src='campus_ambassador.js'></script>
+    
+
+</body>
+</html>

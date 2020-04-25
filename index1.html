@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>STEPCONE 2020</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="./style.css">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,900' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script>var ml = { timelines: {}};</script>
+  <style>
+  body {
+    top: 40%;
+    font: 10px "Source Sans Pro", Arial, Helvetica, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+  }
+  
+  @media(max-width: 1022px)
+  {
+      .ml4{
+        margin-top: 75vw;
+      }
+  }
+  @media(min-width: 1023px max-width: 1025px )
+  {
+      .ml4{
+        margin-top: 50vw;
+      }
+  }
+  @media(min-width: 1026px)
+  {
+      .ml4{
+        margin-top: 20vw;
+      }
+  
+
+  </style>
+
+<!-- pardhu -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+
+        <link rel="stylesheet" media="screen" href="css/clock.css">
+  
+</head>
+
+<body onload="Loader_fun()">
+
+
+<div class="moving-letters" id="load">
+
+<h1 class="ml4">
+
+  <span class="letters letters-1" id="ml14">EDUCATE</span>
+  <span class="letters letters-2" id="ml14">INNOVATE</span>
+  <span class="letters letters-3" id="ml14">CHANGE</span>
+
+</h1>
+</div>
+<script>
+var myVar;
+function Loader_fun() {
+   myVar = setTimeout(func, 3000);
+var ml4 = {};
+ml4.opacityIn = [0,1];
+ml4.scaleIn = [0.2, 1];
+ml4.scaleOut = 3;
+ml4.durationIn = 700;
+ml4.durationOut = 500;
+ml4.delay = 150;
+var i=0;i
+ml.timelines["ml4"] = anime.timeline(i<1)
+  .add({
+    targets: '.ml4 .letters-1',
+    opacity: ml4.opacityIn,
+    scale: ml4.scaleIn,
+    duration: ml4.durationIn
+  }).add({
+    targets: '.ml4 .letters-1',
+    opacity: 0,
+    scale: ml4.scaleOut,
+    duration: ml4.durationOut,
+    easing: "easeInExpo",
+    delay: ml4.delay
+  }).add({
+    targets: '.ml4 .letters-2',
+    opacity: ml4.opacityIn,
+    scale: ml4.scaleIn,
+    duration: ml4.durationIn
+  }).add({
+    targets: '.ml4 .letters-2',
+    opacity: 0,
+    scale: ml4.scaleOut,
+    duration: ml4.durationOut,
+    easing: "easeInExpo",
+    delay: ml4.delay
+  }).add({
+    targets: '.ml4 .letters-3',
+    opacity: ml4.opacityIn,
+    scale: ml4.scaleIn,
+    duration: ml4.durationIn
+  }).add({
+    targets: '.ml4 .letters-3',
+    opacity: 0,
+    scale: ml4.scaleOut,
+    duration: ml4.durationOut,
+    easing: "easeInExpo",
+    delay: ml4.delay
+  }).add({
+    targets: '.ml4',
+    opacity: 0,
+    duration: 500,
+    delay: 500
+  });
+}
+function func() {
+document.getElementById("load").style.display = "none";
+document.getElementById("myDiv").style.display = "block";
+window.location.href="home.html";
+window.open('home.html','_self');
+}
+</script>
+
+<style>
+.ml4 {
+  position: relative;
+  font-weight: 900;
+  font-size: 4.5em;
+
+}
+.ml4 .letters {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0.3em;
+  right: 0;
+  opacity: 0; 
+}
+</style>
+
+
+<div id="myDiv" style="display:none;">
+
+
+<!-- 
+
+Amoeba background 
+
+<div class="container demo">
+   <div class="content">
+      <div id="large-header" class="large-header">
+         <canvas id="demo-canvas"></canvas>
+         <h1 class="main-title"><span class="thin">STEPCONE</span> <strong>2020</strong></h1>
+      </div>
+   </div>
+</div>
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js'></script>
+
+  
+
+    <script  src="./script.js"></script>
+
+
+-->
+
+
+
+
+
+
+</div>
+
+</body>
+
+</html>

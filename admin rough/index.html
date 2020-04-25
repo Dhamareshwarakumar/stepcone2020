@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+<script type="text/javascript">
+  function f(){
+  var mail=document.getElementById('mm').value;
+  var pwd=document.getElementById('p').value;
+  //alert(mail);
+  if(mail=="admin.stepcone2020" && pwd=="**********")
+  {
+    return true;
+  }
+  else
+  {
+    alert("Wrong details");
+    return false;
+  }
+  }
+</script>
+ <script type="text/javascript" >
+   function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+</script>
+ <script language="JavaScript">
+  /**
+    * Disable right-click of mouse, F12 key, and save key combinations on page
+    * By Arthur Gareginyan (arthurgareginyan@gmail.com)
+    * For full source code, visit https://mycyberuniverse.com
+    */
+  window.onload = function() {
+    document.addEventListener("contextmenu", function(e){
+      e.preventDefault();
+    }, false);
+    document.addEventListener("keydown", function(e) {
+    //document.onkeydown = function(e) {
+      // "I" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+        disabledEvent(e);
+      }
+      // "J" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        disabledEvent(e);
+      }
+      // "S" key + macOS
+      if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+        disabledEvent(e);
+      }
+      // "U" key
+      if (e.ctrlKey && e.keyCode == 85) {
+        disabledEvent(e);
+      }
+      // "F12" key
+      if (event.keyCode == 123) {
+        disabledEvent(e);
+      }
+    }, false);
+    function disabledEvent(e){
+      if (e.stopPropagation){
+        e.stopPropagation();
+      } else if (window.event){
+        window.event.cancelBubble = true;
+      }
+      e.preventDefault();
+      return false;
+    }
+  };
+</script>
+</head>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+<!-- partial:index.partial.html -->
+<h1 class="text-center"><b><i>LOGIN FORM</i></b></h1>
+<div class="container pt-3">
+  <div class="row justify-content-sm-center">
+    <div class="col-sm-6 col-md-4">
+
+      <div class="card border-info text-center">
+        <div class="card-header">
+          Sign in to continue
+        </div>
+        <div class="card-body">
+          <img src="https://cdn.razorpay.com/logos/DCaiRnJ8DUf2Ja_medium.jpg">
+          <h4 class="text-center">STEPCONE 2020</h4>
+          <form class="form-signin" action="user_reg.php">
+            <input type="text" class="form-control mb-2" placeholder="Email" id="mm" required autofocus>
+            <input type="password" class="form-control mb-2" placeholder="Password" id="p" required>
+            <button class="btn btn-lg btn-primary btn-block mb-1" type="submit" onclick="return f();">Sign in</button>
+            <!--<label class="checkbox float-left">
+              <input type="checkbox" value="remember-me">
+              Remember me
+            </label>-->
+            <!--<a href="#" class="float-right">Need help?</a>-->
+          </form>
+        </div>
+      </div>
+      <!--<a href="#" class="float-right">Create an account </a>-->
+    </div>
+  </div>
+</div>
+
+<!--<hr>
+
+<h1 class="text-center mt-5">Horizontal layout</h1>
+<div class="container pt-3">
+  <div class="row justify-content-sm-center">
+    <div class="col-sm-10 col-md-6">
+      <div class="card border-info">
+        <div class="card-header">Sign in to continue</div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <img src="https://placeimg.com/128/128/tech/sepia">
+              <h4 class="text-center">Hunger & Debt Ltd</h4>
+            </div>
+            <div class="col-md-8">
+              <form class="form-signin">
+                <input type="text" class="form-control mb-2" placeholder="Email" required autofocus>
+                <input type="password" class="form-control mb-2" placeholder="Password" required>
+                <button class="btn btn-lg btn-primary btn-block mb-1" type="submit">Sign in</button>
+                <label class="checkbox float-left">
+              <input type="checkbox" value="remember-me">
+              Remember me
+            </label>
+                <a href="#" class="float-right">Need help?</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="float-right">Create an account </a>
+    </div>
+  </div>
+</div>-->
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+
+</body>
+</html>
